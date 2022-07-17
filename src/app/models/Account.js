@@ -1,5 +1,5 @@
-const mongoose = require('mogoose');
-const Schema = mongoose.Schema;
+const mongoose = require('mongoose');
+const { Schema } = mongoose;
 
 const Account = new Schema(
     {
@@ -8,11 +8,11 @@ const Account = new Schema(
         phone: { type: String, maxLength: 11, required: true },
         address: { type: String, maxLength: 255, required: true },
         password: { type: String, maxLength: 70, required: true },
-        regency: {type: Boolean, default: 'User'},
+        regency: { type: String, default: 'User' },
     },
     {
         timestamps: true,
     },
 );
 
-module.exports = mongoose.model('Account Schema', Account);
+module.exports = mongoose.model('Accounts', Account);

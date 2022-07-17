@@ -361,32 +361,32 @@
     <!-- FORM SECTION -->
     <div class="row">
       <!-- SIGN UP -->
-        <form action="login/register" method="post" class="col align-items-center flex-col sign-up">
+        <form action="/login/register" method="post" class="col align-items-center flex-col sign-up">
           <div class="form-wrapper align-items-center">
             <div class="form sign-up">
               <div class="input-group">
                 <i class='bx bxs-user'></i>
-                <input type="text" placeholder="Name" name="name">
+                <input name="name" type="text" placeholder="Name" required>
               </div>
               <div class="input-group">
                 <i class='bx bx-mail-send'></i>
-                <input type="email" placeholder="Email" name="email">
+                <input name="email" type="email" placeholder="Email" required>
               </div>
               <div class="input-group">
                 <i class='bx bx-phone-send'></i>
-                <input type="text" placeholder="Phone" name="phone">
+                <input name="phone" type="text" placeholder="Phone" required>
               </div>
               <div class="input-group">
                 <i class='bx bx-address-send'></i>
-                <input type="text" placeholder="Address" name="address">
+                <input name="address" type="text" placeholder="Address" required>
               </div>
               <div class="input-group">
                 <i class='bx bxs-lock-alt'></i>
-                <input type="password" placeholder="Password" name="password">
+                <input name="password" type="password" placeholder="Password" required>
               </div>
               <div class="input-group">
                 <i class='bx bxs-lock-alt'></i>
-                <input type="password" placeholder="Confirm password">
+                <input type="password" placeholder="Confirm password" required>
               </div>
               <button type="submit">
                 Sign up
